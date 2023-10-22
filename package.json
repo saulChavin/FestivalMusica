@@ -1,0 +1,19 @@
+{
+  "name": "festivalmusica_inicio",
+  "version": "1.0.0",
+  "description": "Aprendiendo SASS y Gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maurof18/FestivalMusica.git"
+  },
+  "author": "Mauro Flores",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maurof18/FestivalMusica/issues"
+  },
+  "homepage": "https://github.com/Maurof18/FestivalMusica#readme"
+}
