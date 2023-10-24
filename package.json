@@ -15,5 +15,15 @@
   "bugs": {
     "url": "https://github.com/Maurof18/FestivalMusica/issues"
   },
-  "homepage": "https://github.com/Maurof18/FestivalMusica#readme"
+  "homepage": "https://github.com/Maurof18/FestivalMusica#readme",
+  "keywords": [
+    "SASS",
+    "Gulp",
+    "Web",
+    "Design"
+  ],
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0"
+  }
 }
