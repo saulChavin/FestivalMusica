@@ -1,15 +1,13 @@
-const {series}= require('gulp') ;
+const {series, src, dest}= require('gulp') ;
+const sass = require('gulp-sass')(require('sass'));
 
-function css(done){
-    console.log('Compilando .... CSS');
-    done();
-}
-function javaScript(done){
-    console.log('Compilando .... JavaScript');
-    done();
+function css(){
+// el src es una funcion q encuentra el scss de una ubicacion
+   return src('src/scss/app.scss')
+            .pipe( sass({
+                outputStyle: 'expanded'
+            }) )
+            .pipe( dest('./build/css') )
 }
 
-exports.css = css;
-exports.javaScript = javaScript;
-// series te prmite ejecutar varias funciones
-exports.tareas = series(css, javaScript);
+exports.css= css;
