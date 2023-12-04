@@ -11,8 +11,8 @@ function css(){
 }
 
 function watchArchivos(){
-    watch('src/scss/app.scss',css);
+    watch('src/scss/**/*.scss',css); //! * =  la carpeta actual - ** = todos los archivos con esa extension
 }
 exports.css= css;
 
-exports.watchArchivos=watchArchivos;
+exports.watchArchivos=watchArchivos; 

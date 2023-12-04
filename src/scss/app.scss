@@ -1,4 +1,7 @@
-$fuentePrincipal:"Helvetica";
+@import 'base/normalize'; //resetear el formato del HTML
+@import 'base/variables'; //para definir algunas variables que necesitemos en otros archivos
+@import 'base/globales'; // selectores que se aplicaran en todo el proyecto
+ 
 
 body{
     font-family: $fuentePrincipal;
