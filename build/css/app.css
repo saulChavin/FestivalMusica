@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Tektur:wght@400;700&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -316,7 +317,7 @@ html {
 }
 
 body {
-  font-family: "Arial";
+  font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
 }
 
@@ -352,13 +353,13 @@ h3 {
 }
 
 body {
-  font-family: "Arial";
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
-  font-family: "Arial";
+  font-family: "Montserrat", sans-serif;
 }
 
 p {
-  font-family: "Arial";
+  font-family: "Montserrat", sans-serif;
 }
