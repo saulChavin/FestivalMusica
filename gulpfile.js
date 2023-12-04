@@ -1,4 +1,4 @@
-const {series, src, dest}= require('gulp') ;
+const {series, src, dest,watch}= require('gulp') ;
 const sass = require('gulp-sass')(require('sass'));
 
 function css(){
@@ -10,4 +10,9 @@ function css(){
             .pipe( dest('./build/css') )
 }
 
+function watchArchivos(){
+    watch('src/scss/app.scss',css);
+}
 exports.css= css;
+
+exports.watchArchivos=watchArchivos;
