@@ -352,6 +352,9 @@ h3 {
   font-size: 3rem;
 }
 
+.header {
+  background-color: #4cb8b3;
+}
 body {
   font-family: "Montserrat", sans-serif;
 }

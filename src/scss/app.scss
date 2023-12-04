@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Tektur:wght@400;700&display=swap');
 @import 'base/variables'; //para definir algunas variables que necesitemos en otros archivos
 @import 'base/globales'; // selectores que se aplicaran en todo el proyecto
- 
+@import 'layout/header';
 
 body{
     font-family: $fuentePrincipal;
