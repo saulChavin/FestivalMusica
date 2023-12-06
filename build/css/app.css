@@ -392,3 +392,19 @@ h3 {
 .navegacion-principal a:hover {
   color: #fef46d;
 }
+
+.video {
+  position: relative;
+  max-height: 90rem;
+  overflow: hidden;
+}
+.video .overlay {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  background-color: #f53756;
+}
+.video video {
+  display: block;
+  width: 100%;
+}

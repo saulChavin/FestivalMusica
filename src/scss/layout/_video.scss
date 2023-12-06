@@ -1,0 +1,15 @@
+.video{
+    position: relative;
+    max-height: 90rem;
+    overflow: hidden;
+    .overlay{
+        position: absolute;
+        width: 10rem;
+        height: 10rem;
+        background-color: $rosa;
+    }
+    video{
+        display: block;
+        width: 100%;
+    }
+}
