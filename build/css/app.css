@@ -409,3 +409,22 @@ h3 {
   display: block;
   width: 100%;
 }
+
+.contenido-video {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.contenido-video h2 {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  font-size: 7rem;
+  align-items: flex-start;
+}
+.contenido-video h2 span {
+  background-color: #f53756;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+}

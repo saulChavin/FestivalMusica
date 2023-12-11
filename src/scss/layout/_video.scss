@@ -16,3 +16,24 @@
         width: 100%;
     }
 }
+
+.contenido-video{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    
+    h2{
+        display: flex;
+        flex-direction: column;
+        color: $blanco;
+        font-size: 7rem;
+        align-items: flex-start;
+
+        span{
+            background-color:  $rosa;
+            font-size: 2rem;
+            padding: 1rem 2rem;
+        }
+    }
+}
