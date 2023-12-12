@@ -3,6 +3,7 @@
 @import 'base/variables'; //para definir algunas variables que necesitemos en otros archivos
 @import 'base/mixins';
 @import 'base/globales'; // selectores que se aplicaran en todo el proyecto
+@import 'base/utilidades';
 @import 'layout/header';
 @import 'layout/video';
 @import 'layout/festival';
