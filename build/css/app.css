@@ -607,3 +607,47 @@ h3 {
   text-align: center;
   margin-bottom: 2rem;
 }
+
+.pase {
+  width: 100%;
+  border-spacing: 0;
+}
+.pase thead {
+  background-color: #f53756;
+}
+.pase thead th {
+  padding: 2.5rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 2rem;
+}
+.pase tbody {
+  background-color: #ffffff;
+}
+.pase tbody td {
+  padding: 1.25rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+.pase tbody tr:last-of-type td {
+  border: none;
+}
+.pase tfoot {
+  background-color: #752f97;
+}
+.pase tfoot td {
+  padding: 1.25rem;
+  text-align: center;
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.footer {
+  background-color: #f53756;
+  padding: 0.8333333333rem;
+  text-align: center;
+}
+.footer p {
+  color: #ffffff;
+  margin: 0;
+}
