@@ -11,6 +11,9 @@ const postcss= require('gulp-postcss');
 const cssnano= require('cssnano');
 const sourcemaps= require('gulp-sourcemaps');
 
+const terser = require('gulp-terser-js');
+const rename = require('gulp-rename');
+
 
 const paths= {
     imagenes: 'src/img/**/*',//! * =  la carpeta actual - ** = todos los archivos con esa extension
@@ -32,7 +35,11 @@ function css(){
 
 function javascript(){
     return src(paths.js)
+        .pipe(sourcemaps.init())
         .pipe( concat('bundle.js'))
+        .pipe(terser())
+        .pipe(sourcemaps.write('.'))
+        .pipe( rename({ suffix: '.min' }))
         .pipe(dest('./build/js'))
 }
 
