@@ -5,18 +5,28 @@ const notify = require( 'gulp-notify');
 const webp = require('gulp-webp');
 const concat = require('gulp-concat');
 
+//utilidades CSS
+const autoprefixer= require('autoprefixer');
+const postcss= require('gulp-postcss');
+const cssnano= require('cssnano');
+const sourcemaps= require('gulp-sourcemaps');
+
+
 const paths= {
-    imagenes: 'src/img/**/*',
+    imagenes: 'src/img/**/*',//! * =  la carpeta actual - ** = todos los archivos con esa extension
     scss: 'src/scss/**/*.scss',
     js:'src/js/**/*.js'
 }
+// autoprefixer y cssnano optimizan/mejoran al codigo css
+//sourcemaps mantiene la referencia para ver que archivo de sass debemos modificar en el proyecto
 
 function css(){
 // el src es una funcion q encuentra el scss de una ubicacion
    return src(paths.scss)
-            .pipe( sass({
-                outputStyle: 'expanded'
-            }) )
+            .pipe (sourcemaps.init())
+            .pipe( sass() )
+            .pipe(postcss( [autoprefixer(),cssnano()]))
+            .pipe(sourcemaps.write('.'))
             .pipe( dest('./build/css') );
 }
 
@@ -51,7 +61,7 @@ function versionWebp(){
 
 
 function watchArchivos(){
-    watch(paths.scss,css); //! * =  la carpeta actual - ** = todos los archivos con esa extension
+    watch(paths.scss,css); 
     watch(paths.js,javascript);
 }
 exports.css= css;
